@@ -1,0 +1,9 @@
+.scoreListUl {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  height: 600px;
+  padding: 30px;
+  overflow-y: scroll;
+}

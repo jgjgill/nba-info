@@ -1,0 +1,45 @@
+@use '/src/styles/constants/colors';
+
+.loadingWrapper {
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+  border-radius: 40px;
+  transform: translate(-50%, 50%);
+}
+
+.loader {
+  position: relative;
+  width: 11em;
+  height: 11em;
+  margin: 300px auto;
+  font-size: 10px;
+  background: linear-gradient(to right, colors.$GRAYE 10%, rgba(226, 44, 44, 0%) 42%);
+  border-radius: 50%;
+  animation: load 1.4s infinite linear;
+}
+
+.loader::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+  height: 75%;
+  margin: auto;
+  content: '';
+  background: colors.$PRIMARY;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

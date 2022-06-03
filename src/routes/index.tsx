@@ -1,7 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { lazy } from 'react'
 
 import Layout from 'components/layout'
-import Home from './home'
+import TeamInfo from 'components/team/TeamInfo'
+
+const Home = lazy(() => import('./home'))
+const Subscribe = lazy(() => import('./team'))
 
 const App = () => {
   return (
@@ -9,6 +13,9 @@ const App = () => {
       <Routes>
         <Route element={<Layout />}>
           <Route path='/' element={<Home />} />
+          <Route path='team' element={<Subscribe />}>
+            <Route path=':teamId' element={<TeamInfo />} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>

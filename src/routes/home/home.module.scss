@@ -1,0 +1,15 @@
+@use '/src/styles/mixins/position';
+@use '/src/styles/constants/colors';
+
+.homeWrapper {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-size: x-large;
+    font-weight: 700;
+    color: colors.$GRAYE;
+  }
+}

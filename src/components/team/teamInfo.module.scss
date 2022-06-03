@@ -1,0 +1,27 @@
+@use '/src/styles/mixins/position';
+@use '/src/styles/constants/colors';
+
+.teamInfoWrapper {
+  position: fixed;
+  top: 350px;
+  left: 50%;
+  width: 300px;
+  height: 65%;
+  max-height: 500px;
+  padding: 20px;
+  background-color: colors.$PRIMARY;
+  border: 1px solid colors.$SECONDARY;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

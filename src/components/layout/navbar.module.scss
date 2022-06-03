@@ -1,0 +1,31 @@
+@use '/src/styles/constants/colors';
+
+.navbarWrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: colors.$SECONDARY;
+  border: 1px solid colors.$PRIMARY;
+  border-radius: 0 0 20px 20px;
+
+  .navbarUl {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: none;
+      stroke: colors.$PRIMARY;
+    }
+
+    .isActive {
+      svg {
+        stroke: colors.$GRAYE;
+      }
+    }
+  }
+}

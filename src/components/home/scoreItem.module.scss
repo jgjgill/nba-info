@@ -1,0 +1,43 @@
+@use '/src/styles/constants/colors';
+
+.scoreItemLi {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 3px;
+  background-color: colors.$SECONDARY;
+  border-radius: 5px;
+
+  &:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+
+  span {
+    color: colors.$WHITE;
+  }
+
+  .matchWrapper {
+    display: flex;
+    align-items: center;
+
+    .teamWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 150px;
+    }
+
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+
+    .scoreWrapper {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
