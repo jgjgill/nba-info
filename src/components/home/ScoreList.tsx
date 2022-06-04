@@ -18,7 +18,7 @@ const ScoreList = ({ gamesData, scrollRef }: ScoreListProps) => {
     <ul className={styles.scoreListUl}>
       {gameDataList}
 
-      <div ref={scrollRef} />
+      {gamesData.length !== 0 && <div ref={scrollRef} />}
     </ul>
   )
 }
