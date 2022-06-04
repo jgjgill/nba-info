@@ -17,7 +17,7 @@ NBA 결과를 최신 경기를 기준으로 확인하고 NBA 팀들의 정보를
 
 |Main 페이지|Team 페이지|
 |:---:|:---:|
-|||
+|![home](https://user-images.githubusercontent.com/79239852/171988296-97697976-3c2a-4166-b141-4e7fe6a71854.gif)|![team](https://user-images.githubusercontent.com/79239852/171988396-68487e03-76d7-440b-8e22-82aeb826a010.gif)|
 
 # 🔧사용 라이브러리
 
@@ -31,7 +31,11 @@ NBA 결과를 최신 경기를 기준으로 확인하고 NBA 팀들의 정보를
 
 - Infinite Scroll
 
+**react-query**
+
+- Data fetching
+
 # 🚀배포
-Github pages 배포
+Netlify 배포
 
 [jgjgill-nbainfo.netlify.app/](https://jgjgill-nbainfo.netlify.app/)
